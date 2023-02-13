@@ -15,4 +15,4 @@
 ![Место](./images/readme.JPG "Проект из Фигмы")
 
 
-[Ссылка на сайт](https://anna-test-2020.github.io/mesto/)
+[Ссылка на сайт](https://anna-test-2020.github.io/mesto-project/)

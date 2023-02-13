@@ -1,0 +1,28 @@
+.popup-img__close {
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: 0;
+  background-image: url('../../../images/close-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate(40px, -40px);
+  position: absolute;
+  right: 0;
+  top: 0;
+  outline: none;
+}
+
+.popup-img__close:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .popup-img__close {
+    width: 20px;
+    height: 20px;
+    background-image: url('../../../images/close-icon-mobil.svg');
+    transform: translate(0px, -36px);
+  }
+}

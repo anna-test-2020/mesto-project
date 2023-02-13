@@ -1,0 +1,20 @@
+.cards__like-button {
+  width: 22px;
+  height: 19px;
+  margin-left: auto;
+  background-color: transparent;
+  border: 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  cursor: pointer;
+  outline:  none;
+}
+
+.cards__like-button:hover {
+  background-image: url('../../../images/hart-hover.svg');
+}
+
+.cards__like-button:active {
+  background-image: url('../../../images/hart-active.svg');
+} 

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Страница">
+  <meta name="keywords" content="HTML5, CSS">
+  <meta name="author" content="anna">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Проект 4: Место</title>
+</head>
+<body class="page">
+  <div class="page__container">
+
+    <header class="header">
+      <a target="_blank" href="https://yandex.ru/" class="header__logo"></a>
+    </header>
+
+    <main class="content">
+
+      <section class="profile">
+        <img  class="profile__avatar" src="./images/kusto.jpg" alt="фото">
+        <div class="profile__info">
+          <div class="profile__name-edit">
+            <h1 class="profile__name">Жак-Ив Кусто</h1>
+            <button class="profile__edit" type="button" aria-label="Редактировать"></button>
+          </div>
+          <p class="profile__occupation">Исследователь океана</p>
+        </div>
+        <button class="profile__add-button" type="button" aria-label="Добавить"></button>
+      </section>
+
+      <section class="cards">
+        <div class="cards__list">
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">&copy;&nbsp;2020&nbsp;Mesto&nbsp;Russia</p>
+    </footer>
+
+  </div>  <!-- page -->
+
+  <template class="template">
+    <article class="cards__item">
+      <img class="cards__img" src=" " alt=" ">
+      <div class="cards__info">
+        <h2 class="cards__region"></h2>
+        <button type="button" aria-label="нравится" class="cards__like-button cards__like-button_defoult"></button>
+        <button type="button" aria-label="удалить" class="cards__delete-button"></button>
+      </div>
+    </article>
+  </template>
+
+
+  <article class="popup popup_type_edit-profile">
+    <div class="popup__container">
+      <button class="popup__close" type="button" aria-label="Закрыть"></button>
+      <h2 class="popup__title">Редактировать профиль</h2>
+      <form class="popup__form popup__form_type_edit-profile" name="popup__form">
+        <input class="popup__input popup__input_type_name" name="popup__input_type_name" type="text" value="">
+        <input class="popup__input popup__input_type_occupation" name="popup__input_type_occupation" type="text" value="">
+        <button class="popup__save" aria-label="Сохранить изменения" type="submit">Сохранить</button>
+      </form>
+    </div>
+  </article>
+
+  <article class="popup popup_type_add-place">
+    <div class="popup__container">
+      <button class="popup__close" type="button" aria-label="Закрыть"></button>
+      <h2 class="popup__title">Новое место</h2>
+      <form class="popup__form popup__form_type_add-place" name="popup__form_type_add-place">
+        <input class="popup__input popup__input_type_place" name="popup__input_type_place" type="text" value="" placeholder="Название">
+        <input class="popup__input popup__input_type_link" name="popup__input_type_link" type="text" value="" placeholder="Ссылка">
+        <button class="popup__save" aria-label="Создать" type="submit">Создать</button>
+      </form>
+    </div>
+  </article>
+
+  <article class="popup-img popup popup_type_open-card">
+    <div class="popup-img__container">
+      <img class="popup-img__img">
+      <button class="popup__close" type="button" aria-label="Закрыть"></button>
+      <h2 class="popup-img__title"></h2>
+    </div>
+  </article>
+
+  <script src="./scripts/index.js"></script>
+</body>
+</html>

@@ -13,7 +13,7 @@
   <div class="page__container">
 
     <header class="header">
-      <a target="_blank" href="https://yandex.ru/" class="header__logo"></a>
+      <a target="_blank" rel="noopener noreferrer" href="https://yandex.ru/" class="header__logo"></a>
     </header>
 
     <main class="content">
@@ -23,70 +23,90 @@
         <div class="profile__info">
           <div class="profile__name-edit">
             <h1 class="profile__name">Жак-Ив Кусто</h1>
-            <button class="profile__edit" type="button" aria-label="Редактировать"></button>
+            <button class="profile__edit" type="button" aria-label="Кнопка Редактировать"></button>
           </div>
           <p class="profile__occupation">Исследователь океана</p>
         </div>
-        <button class="profile__add-button" type="button" aria-label="Добавить"></button>
+        <button class="profile__add-button" type="button" aria-label="Кнопка Добавить"></button>
       </section>
 
-      <section class="cards">
-        <div class="cards__list">
-        </div>
+      <section class="cards" aria-label="Места">
+        <ul class="cards__list">
+          <li class="cards__item">
+            <img class="cards__img" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg" alt="Архыз">
+            <div class="cards__info">
+              <h2 class="cards__region">Архыз</h2>
+              <button type="button" aria-label="Кнопка Кнопка нравится" class="cards__like-button cards__like-button_defoult"></button>
+              <button type="button" aria-label="Кнопка Кнопка удалить" class="cards__delete-button"></button>
+            </div>
+          </li>
+        
+          <li class="cards__item">
+            <img class="cards__img" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg" alt="Челябинская область">
+            <div class="cards__info">
+              <h2 class="cards__region">Челябинская область</h2>
+              <button type="button" aria-label="Кнопка нравится" class="cards__like-button cards__like-button_defoult"></button>
+              <button type="button" aria-label="Кнопка удалить" class="cards__delete-button"></button>
+            </div>
+          </li>
+        
+          <li class="cards__item">
+            <img class="cards__img" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg" alt="Иваново">
+            <div class="cards__info">
+              <h2 class="cards__region">Иваново</h2>
+              <button type="button" aria-label="Кнопка нравится" class="cards__like-button cards__like-button_defoult"></button>
+              <button type="button" aria-label="Кнопка удалить" class="cards__delete-button"></button>
+            </div>
+          </li>
+        
+          <li class="cards__item">
+            <img class="cards__img" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg" alt="Камчатка">
+            <div class="cards__info">
+              <h2 class="cards__region">Камчатка</h2>
+              <button type="button" aria-label="Кнопка нравится" class="cards__like-button cards__like-button_defoult"></button>
+              <button type="button" aria-label="Кнопка удалить" class="cards__delete-button"></button>
+            </div>
+          </li>
+        
+          <li class="cards__item">
+            <img class="cards__img" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg" alt="Холмогорский район">
+            <div class="cards__info">
+              <h2 class="cards__region">Холмогорский район</h2>
+              <button type="button" aria-label="Кнопка нравится" class="cards__like-button cards__like-button_defoult"></button>
+              <button type="button" aria-label="Кнопка удалить" class="cards__delete-button"></button>
+            </div>
+          </li>
+        
+          <li class="cards__item">
+            <img class="cards__img" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg" alt="Байкал">
+            <div class="cards__info">
+              <h2 class="cards__region">Байкал</h2>
+              <button type="button" aria-label="Кнопка нравится" class="cards__like-button cards__like-button_defoult"></button>
+              <button type="button" aria-label="Кнопка удалить" class="cards__delete-button"></button>
+            </div>
+          </li>
+        </ul>
       </section>
 
     </main>
 
     <footer class="footer">
-      <p class="footer__copyright">&copy;&nbsp;2020&nbsp;Mesto&nbsp;Russia</p>
+      <p class="footer__copyright" lang="en">&copy;&nbsp;2023&nbsp;Mesto&nbsp;Russia</p>
     </footer>
 
-  </div>  <!-- page -->
-
-  <template class="template">
-    <article class="cards__item">
-      <img class="cards__img" src=" " alt=" ">
-      <div class="cards__info">
-        <h2 class="cards__region"></h2>
-        <button type="button" aria-label="нравится" class="cards__like-button cards__like-button_defoult"></button>
-        <button type="button" aria-label="удалить" class="cards__delete-button"></button>
-      </div>
-    </article>
-  </template>
-
+  </div>  
 
   <article class="popup popup_type_edit-profile">
     <div class="popup__container">
       <button class="popup__close" type="button" aria-label="Закрыть"></button>
       <h2 class="popup__title">Редактировать профиль</h2>
-      <form class="popup__form popup__form_type_edit-profile" name="popup__form">
-        <input class="popup__input popup__input_type_name" name="popup__input_type_name" type="text" value="">
-        <input class="popup__input popup__input_type_occupation" name="popup__input_type_occupation" type="text" value="">
+      <form class="popup__form popup__form_type_edit-profile" name="popupForm">
+        <input class="popup__input popup__input_type_name" name="popupInputTypeName" type="text" value="" placeholder="Имя">
+        <input class="popup__input popup__input_type_occupation" name="popupInputTypeOccupation" type="text" value="" placeholder="Занятие">
         <button class="popup__save" aria-label="Сохранить изменения" type="submit">Сохранить</button>
       </form>
     </div>
   </article>
 
-  <article class="popup popup_type_add-place">
-    <div class="popup__container">
-      <button class="popup__close" type="button" aria-label="Закрыть"></button>
-      <h2 class="popup__title">Новое место</h2>
-      <form class="popup__form popup__form_type_add-place" name="popup__form_type_add-place">
-        <input class="popup__input popup__input_type_place" name="popup__input_type_place" type="text" value="" placeholder="Название">
-        <input class="popup__input popup__input_type_link" name="popup__input_type_link" type="text" value="" placeholder="Ссылка">
-        <button class="popup__save" aria-label="Создать" type="submit">Создать</button>
-      </form>
-    </div>
-  </article>
-
-  <article class="popup-img popup popup_type_open-card">
-    <div class="popup-img__container">
-      <img class="popup-img__img">
-      <button class="popup__close" type="button" aria-label="Закрыть"></button>
-      <h2 class="popup-img__title"></h2>
-    </div>
-  </article>
-
-  <script src="./scripts/index.js"></script>
 </body>
 </html>

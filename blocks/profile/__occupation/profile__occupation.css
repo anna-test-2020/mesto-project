@@ -33,5 +33,7 @@
 @media (max-width: 450px) {
   .profile__occupation {
     max-width: 200px;
+    font-size: 14px;
+    line-height: 17px;      
   }
 }

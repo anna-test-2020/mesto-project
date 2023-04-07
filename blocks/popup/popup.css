@@ -1,8 +1,7 @@
 .popup {
   position: fixed;
-  display: none;
-  /* display: flex;  */
-  /* opacity: 0; */
+  display: flex;
+  /* display: none; */
   top: 0;
   left: 0;
   bottom: 0;
@@ -11,4 +10,5 @@
   box-sizing: border-box;
   z-index: 100;
   transition: visibility 0.2s linear, opacity 0.2s linear;
+  background-color: rgba(0, 0, 0, 0.5);
 }

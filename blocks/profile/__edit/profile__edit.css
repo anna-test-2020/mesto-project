@@ -9,12 +9,12 @@
   background-size: 10px 10px;
   background-position: center;
   margin-top: 6px;
-  outline: none;
+  transition: opacity 0.2s ease;
+  cursor: pointer;
 }
 
 .profile__edit:hover {
   opacity: 0.6;
-  cursor: pointer;
 }
 
 @media (max-width: 450px) {
@@ -22,7 +22,7 @@
     width: 18px;
     height: 18px;
     margin-left: 10px;
-    background-size: 7px 7px;
+    background-size: 7.5px 7.5px;
     margin-top: 2px;
   }
 }

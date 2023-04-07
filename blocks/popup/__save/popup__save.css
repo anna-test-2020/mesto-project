@@ -2,22 +2,21 @@
   width: 100%;
   background: #000000;
   border-radius: 2px;
-  border: 0;
+  border: none;
   color: #fff;
   font-family: 'Inter', Arial, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   text-align: center;
   margin-top: 48px;
   padding: 18px;
-  outline: none;
+  cursor: pointer;
 }
 
 .popup__save:hover {
-  background: rgba(0, 0, 0, 0.8);
-  cursor: pointer;
+  opacity: 0.8;
 }
 
 @media (max-width: 550px) {

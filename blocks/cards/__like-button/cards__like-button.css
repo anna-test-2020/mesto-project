@@ -3,18 +3,18 @@
   height: 19px;
   margin-left: auto;
   background-color: transparent;
-  border: 0;
+  border: none;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
   cursor: pointer;
-  outline:  none;
+  background-image: url('../../../images/hart-disabled.svg');
 }
 
-.cards__like-button:hover {
+/* .cards__like-button:hover {
   background-image: url('../../../images/hart-hover.svg');
 }
 
 .cards__like-button:active {
   background-image: url('../../../images/hart-active.svg');
-} 
+}  */

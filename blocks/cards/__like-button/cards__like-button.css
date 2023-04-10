@@ -11,10 +11,11 @@
   background-image: url('../../../images/hart-disabled.svg');
 }
 
-/* .cards__like-button:hover {
-  background-image: url('../../../images/hart-hover.svg');
+ .cards__like-button:hover {
+  opacity: 0.5;
 }
 
 .cards__like-button:active {
+  opacity: 1;
   background-image: url('../../../images/hart-active.svg');
-}  */
+}

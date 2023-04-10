@@ -10,18 +10,18 @@
   position: absolute;
   right: -40px;
   top: -40px;
+  cursor: pointer;
 }
 
 .popup__close:hover {
   opacity: 0.6;
-  cursor: pointer;
 }
 
 @media (max-width: 550px) {
   .popup__close {
     width: 20px;
     height: 20px;
-    background-image: url('../../../images/close-icon-mobil.svg');
+    background-image: url('../../../images/close-icon.svg');
     right: 0;
     top: -36px;
   }

@@ -1,5 +1,6 @@
 .popup__save {
-  width: 100%;
+  width: 358px;
+  height: 50px;
   background: #000000;
   border-radius: 2px;
   border: none;
@@ -9,10 +10,12 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  text-align: center;
   margin-top: 48px;
-  padding: 18px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 
 .popup__save:hover {
@@ -21,8 +24,9 @@
 
 @media (max-width: 550px) {
   .popup__save {
+    width: 238px;
+    height: 46px;
     margin-top: 45px;
-    padding: 14px;
     font-size: 14px;
     line-height: 17px;
   }
